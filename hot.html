@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="static/assets/js/echarts.min.js"></script>
+
+  <title>城市景点热度分析</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mamba - v4.7.0
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto">
+        <h1><a href="index.html">Travel</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="temp.html"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="/index">首页</a></li>
+          <li><a class="nav-link scrollto" href="/city">城市攻略</a></li>
+          <li><a class="nav-link scrollto" href="/hot">热度分析</a></li>
+          <li><a class="nav-link scrollto" href="/travel">出行分析</a></li>
+          <li><a class="nav-link scrollto" href="/map">地图</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>城市景点热度分析图</h2>
+        </div>
+
+        <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '上海'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['武康路', '上海迪士尼度假区', '上海海洋水族馆', '外滩', '横沙岛', '朱家角古镇景区',
+                '东方明珠','上海海昌海洋公园','上海城隍庙道观','枫泾古镇','静安寺','泰晤士小镇','田子坊',
+                '南京路步行街','绿之丘','东滩湿地公园','沙美大楼','上海迪士尼乐团','金山城市沙滩','黄浦江']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [438, 33377, 5247, 49018, 80, 2447, 47397, 1945, 2108, 822, 892, 993, 3420, 12226, 20, 522, 13, 239, 589, 1008]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+  <section id="team1" class="team1">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main1" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main1'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '丽江'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['泸沽湖', '玉龙雪山', '丽江古城', '蓝月谷', '束河古镇', '拉市海',
+                '冰川公园','木府','黑龙潭公园','长江第一湾','白沙古镇','白马龙潭寺','甘海子',
+                '茶马古道','里格半岛','云杉坪','狮子山','东巴文化博物馆','听花谷-丽江百花园','虎跳峡（丽江段）']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [10137, 9918, 18157, 1074, 5293, 4161, 484, 3408, 1065, 433, 595, 277, 366, 170, 405, 430, 258, 78, 0, 1634]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+  <section id="team2" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main2" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main2'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '北京'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['故宫', '恭王府', '古北水镇', '北京平谷金海湖', '去哪儿攻略全球总部', '保利艺术博物馆',
+                '天安门广场','八达岭长城','颐和园','白瀑寺','玉渡山景区','海坨山','百里山水画廊',
+                '爨底下村','红螺寺','南锣鼓巷','乾清宫','圆明园','慕田峪长城','北京国际鲜花港']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [31919, 3364, 3478, 341, 4, 66, 8311, 13896, 15208, 21, 431, 63, 185, 237, 601, 4101, 96, 5561, 4202, 621]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team3" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main3" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main3'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '厦门'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['鼓浪屿', '曾厝垵', '环岛路', '厦门大学', '中山路步行街', '白城沙滩',
+                '厦门双子塔','南普陀寺','厦门园林植物园','椰风寨']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [30801, 5833, 5462, 12549, 3400, 866, 102, 4790, 1912, 275, 30801]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team4" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main4" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main4'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '成都'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['青城山', '成都大熊猫繁育研究基地', '宽窄巷子', '都江堰景区', '春熙路', '川西竹海景区',
+                '洛带古镇','成都天台山','武侯祠','人民公园']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [8320, 14046, 12832, 14124, 1765, 208, 655, 572, 8055, 988]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team5" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main5" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main5'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '杭州'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['千岛湖景区', '西湖', '杭州宋城', '西溪国家湿地公园', '灵隐寺', '塘栖古镇',
+                '板壁山水库','九溪烟树','河坊街','京杭大运河']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [6511, 27317, 6208, 7884, 6521, 442, 0, 1016, 316, 631]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team6" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main6" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main6'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '武汉'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['涨渡湖水上森林', '木兰草原', '黄鹤楼', '青龙山森林公园', '锦里沟', '户部巷',
+                '东湖','江汉路步行街','武汉大学','月亮湖郊野公园','二妃生物公园西苑','湖北省博物馆','龙泉山风景区',
+                '武汉海昌极地海洋公园','木兰云雾山','栖沚里','东湖磨山景区','古德寺','晴川阁','江夏灵山生态文化旅游区']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [6, 834, 11287, 42, 352, 5932, 2813, 1187, 2957, 0, 0, 1688, 49, 2238, 310, 0, 1063, 424, 498, 0]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team7" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main7" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main7'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '海南'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['蜈支洲岛', '皇后湾', '亚龙湾', '鹿回头风景区', '天涯镇', '后海村',
+                '西岛','天涯海角','大小洞天','大东海','亚龙湾热带天堂森林公园','椰梦长廊','南山文化旅游区',
+                '海棠湾','三亚亚特兰蒂斯失落的空间水族馆','三亚千古情','牛王岛','三亚湾','南山寺','小东海']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [16033, 175, 14063, 4774, 21, 126, 2690, 11937, 1894, 3836, 9590, 1201, 5705, 1890, 2157, 5178, 69, 4314, 982, 323]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team8" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main8" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main8'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '西安'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['华山', '大唐不夜城', '秦始皇陵博物院（兵马俑）', '大唐芙蓉园', '终南山', '长安唐村·南堡古寨',
+                '华清宫','陕西历史博物馆','西安城墙','回民街','大雁塔','太平国家森林公园','西安钟楼',
+                '永兴坊','骊山','终南山·南五台景区','白鹿原·白鹿仓','秦岭风景区','西寺沟旅游风景区','大明宫国家遗址公园']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [10331, 1057, 19599, 5390, 60, 1, 8996, 9696, 7725, 12746, 4227, 279, 3090, 806, 3554, 164, 65, 0, 0, 1800]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team9" class="team">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main9" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main9'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '贵州'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['赤水丹霞旅游区·大瀑布', '鄨水·云门囤', '丙安古镇', '遵义会议会址', '四洞沟景区', '大发天渠景区',
+                '仁怀茅台镇','娄山关','赤水丹霞','中国傩城','土城古镇','四渡赤水纪念馆','佛光岩',
+                '遵义古城','中国丹霞谷','海龙屯','红军街','遵义冰雪海洋世界','十二背后·地下裂缝景区','黔北花海']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [903, 57, 253, 687, 754, 0, 245, 149, 70, 28, 102, 32, 18, 0, 13, 237, 0, 10, 39, 71]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team10" class="team10">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main10" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main10'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '青岛'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['崂山', '栈桥', '八大关', '情人坝', '石老人海水浴场', '灵山岛',
+                '小麦岛','连三岛','劈柴院','青岛奥帆中心','五四广场','阿朵花屿','花石楼',
+                '第二海水浴场','中山公园','黄岛金沙滩','青岛森林野生动物世界','基督教堂','青山渔村','小青岛']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [8824, 8300, 5746, 202, 660, 100, 6, 8, 1126, 2601, 2935, 0, 589, 672, 678, 1854, 847, 373, 13, 720]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+  <section id="team11" class="team11">
+    <div class="container" data-aos="fade-up">
+  <section class="counts section-bg">
+      <div class="container">
+
+           <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+          <div id="main11" style="width: 1200px;height:600px;"></div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main11'));
+
+      // 指定图表的配置项和数据
+      var option = {
+        title: {
+          text: '香港'
+        },
+        tooltip: {},
+        legend: {
+          data: ['热度']
+        },
+        xAxis: {
+          data: ['维多利亚港', '石澳', '铜锣湾', '星光大道', '太平山顶', '兰桂坊',
+                '香港大学','长洲岛','浅水湾','大澳','南丫岛','赤柱','维多利亚公园',
+                '香港叮叮车','西贡','庙街','旺角','大屿山','香港海洋馆','海洋剧场']
+        },
+        yAxis: {},
+        series: [
+          {
+            name: '热度',
+            type: 'bar',
+            data: [3879, 442, 917, 2237, 6382, 1018, 651, 720, 774, 644, 1281, 654, 305, 61, 441, 592, 1388, 1064, 9, 22]
+          }
+        ]
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="static/assets/vendor/aos/aos.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+
+</body>
+
+</html>
